@@ -1,0 +1,19 @@
+Substitute command to swap the following lines: s/\(\w\+\) \(.\+\)/\2 \1
+
+appid 240
+Universe 1
+name Counter-Strike: Source
+StateFlags 4
+installdir Counter-Strike Source
+LastUpdated 1643031747
+UpdateResult 0
+SizeOnDisk 4585213376
+buildid 6946501
+LastOwner 76561198074847543
+BytesToDownload 2598681664
+BytesDownloaded 2598681664
+BytesToStage 4585213376
+BytesStaged 4585213376
+AutoUpdateBehavior 0
+AllowOtherDownloadsWhileRunning 0
+ScheduledAutoUpdate 0
