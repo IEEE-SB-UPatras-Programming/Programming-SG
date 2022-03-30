@@ -5,13 +5,6 @@
 - faster feature implementation
 - more focus on the creative part and less on the coding
 
-do you prefer this?
-[picturehere]()
-
-Or this?
-[picturehere]()
-
-
 ### Game engine examples
 
 - Interactive text based games [inkle](https://www.inklestudios.com/ink/web-tutorial/)
