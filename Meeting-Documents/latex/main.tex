@@ -1,0 +1,74 @@
+\documentclass{article}
+
+\usepackage{pgffor}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{scrextend}
+
+
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=LRTB,
+  xleftmargin=\parindent,
+  language=TeX,
+  showstringspaces=false,
+  basicstyle=\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{black},
+  stringstyle=\color{orange},
+}
+
+\begin{document}
+
+\begin{titlepage}
+	%https://github.com/johannesbottcher/titlepageExamples/
+	\begin{addmargin}[4cm]{-1cm}
+		\centering
+		\hfill\includegraphics[width=2cm]{example-image-1x1}\par
+		\vspace{4\baselineskip}
+		{\Huge 
+		Programming SG\\}
+		\vspace{4\baselineskip}
+		by\par\vspace{\baselineskip}
+		{\Large\textsc{Mr. Pipos}\par}
+		\vfill
+		in order to get a fancy degree at\par
+		{\itshape The university of applied dice rolling}
+	\end{addmargin}
+\end{titlepage}
+
+\foreach \n in {apples, burgers}{Let's eat \n. \par}
+
+This is the source code:
+\lstinputlisting[language=TeX, frame=single, style=customc, caption=This is the code!]{main.tex}
+
+% Comment
+
+
+\begin{algorithmic}
+\If {$i\geq maxval$}
+    \State $i\gets 0$
+\Else
+    \If {$i+k\leq maxval$}
+        \State $i\gets i+k$
+    \EndIf
+\EndIf
+
+\Function{Increment}{$a$}
+    \State $a \gets a+1$
+    \State \Return $a$
+\EndFunction
+
+\end{algorithmic}
+
+\newpage
+\lstlistoflistings
+\listofalgorithms
+
+\end{document}

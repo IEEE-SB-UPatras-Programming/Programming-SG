@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{{ content }}
+
+
+<ul>
+  {% for post in site.entries %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}<a>
+    </li>
+  {% endfor %}
+</ul>
+
+<div style="text-align: center;">
+<a class="img_link" href="/feed/entries.xml"><img  src="assets/icons/rss.png" width="50" height="20"></a>
+</div>

@@ -1,0 +1,3 @@
+compile:
+	pandoc main.tex main.html
+	pandoc index.md --template=template.tex --pdf-engine=xelatex -o index.pdf
