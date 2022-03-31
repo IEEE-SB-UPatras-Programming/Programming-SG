@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{exsheets}
+\usepackage{tasks}
+\SetupExSheets[question]{type=exam}
+\SetupExSheets{
+	counter-format=se.qu,
+	counter-within=section,
+	headings=runin,
+}
+\begin{document}
+\section{Chemistry}
+\begin{question}{2}
+	Which one of the entries does not fit with the others?
+	\begin{tasks}(4)
+		\task mercury
+		\task iron
+		\task lead
+		\task zinc
+	\end{tasks}
+\end{question}
+\begin{question}{4}
+	Explain your decision for the answer above.
+
+	\blank[width=5\linewidth,linespread=1.5]{}
+\end{question}
+
+\section{Physics}
+\settasks{
+	label-width=1cm
+}
+\begin{question}{1}
+	What is a funkyton?
+	\begin{tasks}(2)
+		\task A dancing electron
+		\task A dancing proton
+		\task A dancing neutron
+		\task A Dixie Dancing Duck
+	\end{tasks}
+\end{question}
+
+Number of questions: \numberofquestions
+
+\begin{center}
+\begin{tabular}{l*{\numberofquestions}{c}c}\toprule
+	Question & \ForEachQuestion{\QuestionNumber{#1}\iflastquestion{}{&} } & Total \\ \midrule
+	Points   & \ForEachQuestion{\GetQuestionProperty{points}{#1}\iflastquestion{}{&} } & \pointssum* \\ 
+	Reached  & \ForEachQuestion{\iflastquestion{}{&} } & \\ \bottomrule
+\end{tabular}
+\end{center}
+
+Final Score: /\pointssum*
+
+\end{document}
+
+% om

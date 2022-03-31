@@ -1,0 +1,7 @@
+\babel@toc {greek}{}\relax 
+\contentsline {section}{\numberline {1}Σκέλος Α1}{2}{}%
+\contentsline {section}{\numberline {2}Σκέλος Α2}{4}{}%
+\contentsline {subsection}{\numberline {2.1}\foreignlanguage {english}{Low Pass Filter}}{4}{}%
+\contentsline {subsection}{\numberline {2.2}\foreignlanguage {english}{High Pass Filter}}{6}{}%
+\contentsline {subsection}{\numberline {2.3}\foreignlanguage {english}{Band Pass Filter}}{8}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

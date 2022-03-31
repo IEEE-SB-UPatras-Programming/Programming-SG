@@ -1,0 +1,51 @@
+---
+title: My document
+author: Johny
+output: pdf_document
+---
+
+\tableofcontents
+
+Whatever...
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+* Get sheeshed
+
+# Section Heading 
+
+## Sus Section
+
+### Succ Sub Section
+
+*Get italicized bai*
+
+wowwow
+
+```{python}
+a = [1, 2, 3]
+print(a[2])
+```
+
+```{r setup, include=FALSE}  
+library(knitr)  
+library(reticulate)  
+knitr::knit_engines$set(python = reticulate::eng_python)  
+```
+
+\centering
+```{python, out.width="50%"}
+import numpy as np
+import matplotlib.pyplot as plt
+
+n = 256
+X = np.linspace(-np.pi,np.pi,n,endpoint=True)
+Y = np.sin(2*X)
+
+plt.plot(X, Y+1, color='blue', alpha=1.00)
+plt.plot(X, Y-1, color='blue', alpha=1.00)
+plt.show()
+```

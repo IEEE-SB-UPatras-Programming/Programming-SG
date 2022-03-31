@@ -1,0 +1,130 @@
+\documentclass[utf8, a4paper, 10pt, helvetica, narrow, flagWB, booktabs, totpages, english]{europecv}
+\usepackage{graphicx}                        % Required to draw the flag
+\usepackage[a4paper, left=3cm, right=2cm, top=2cm, bottom=2cm]{geometry} 
+\usepackage{babel}
+
+% Commands europecv
+
+\ecvLogoWidth{12mm}		             % Size logo europass
+%\ecvLeftColumnWidth{4cm}		     % Size of column and vertical line (different from standard)
+%\ecvfootnote{footnote}	             % Foot notes
+\ecvname{\textsc{Surname}, First Name}
+
+% Personal picture
+
+\ecvbeforepicture{\raggedleft}
+\ecvpicture[height=1in]{}   % File picture without extension                 
+\ecvafterpicture{\ecvspace{-2.5cm} }
+\ecvaddress{Address first line\\& Address second line\\& City, State}
+\ecvtelephone{+44 (0) 123 4567}
+\ecvemail{john@someserver}
+\ecvnationality{Nationality}
+\ecvdateofbirth{01/01/1900}
+\ecvgender{Male}
+
+\begin{document}
+
+\begin{europecv}
+
+\ecvpersonalinfo		% Print personal info in preamble
+
+\ecvitem{}{}		% 1 free line - \ecvitem{}{} adds elements to a section
+
+\ecvitem{\large\textbf{Desired employment / Occupational field} }{\Large\textbf{Dream job} }  % desired job
+
+% Sections
+
+% School
+
+\ecvsection{Education and training}
+
+\ecvitem{Dates}{From September 1900 to August 1905}\\
+\ecvitem{Title of qualification awarded}{Name of the\\& degree}\\
+\ecvitem{Principal subjects/occupational skills covered}{Learned skills}\\
+\ecvitem{Name and type of organisation providing education and training}{My University\\&
+Address\\&
+City\\& Nation\\&
+Post code\\&
+Tel. +44 (0) 123 45678 23}\\
+\ecvitem{Level in national or international classification}{Level of degree}\\
+
+%\pagebreak{}
+
+% Single course
+
+\ecvitem{Dates}{August 2013}
+\ecvitem{Title of qualification awarded}{Name of certification}
+\ecvitem{Principal subjects/occupational skills covered}{Skills of certification}
+\ecvitem{Name and type of organisation providing education and training}{Institution}\\
+
+% Last working experience
+
+\ecvsection{Work Experience}
+\ecvitem{Dates}{From June 1957 to February 1987}\\
+\ecvitem{Occupation or position held}{Name of the job}\\
+\ecvitem{Main activities and responsibilities}{Activities during \\& this job}
+\ecvitem{Name and address of employer}{Name of employer\\&
+Employer address\\&
+Second line\\& City\\& Nation\\&
+Tel. +39 (0) 1234 5678}\\
+\ecvitem{Type of business or sector}{Business}\\
+
+% Volunteer experiences
+
+\ecvsection{Volunteer Experience}
+
+\ecvitem{Dates}{From August 2000 to present}\\
+\ecvitem{Occupation or position held}{First Aider}\\
+\ecvitem{Main activities and responsibilities}{Activities}
+\ecvitem{Name and address of employer}{Name\\&
+Address\\&
+City\\& Post code\\&
+Nation\\&
+Tel. +44 (0) 1234 7654}\\
+\ecvitem{Type of business or sector}{Business}\\
+
+% Personal competences
+
+\ecvsection{Personal skills and competences}
+
+% Languages
+
+% Mothertongue
+
+\ecvmothertongue[10pt]{Italian}\\		% 10pt leave a one-char line space before the text
+
+% Table for common language evaluation
+
+\ecvlanguageheader{(*)}
+\ecvlanguage{English}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}	         % second language and levels
+      % Language levels A1 - A2 - B1 - B2 - C1 - C2 from basic to advanced.
+      % in this package are \ecv + A, B or C and the sub-level in letters (One or Two)
+\ecvlanguage{French}{\ecvBTwo}{\ecvBTwo}{\ecvBTwo}{\ecvBTwo}{\ecvBTwo}       % third
+\ecvlastlanguage{Russian}{\ecvAOne}{\ecvATwo}{\ecvBOne}{\ecvCTwo}{\ecvBTwo} 	% last language
+
+\ecvlanguagefooter{(*)}\\
+
+% Social skills
+
+\ecvitem{Social skills and competences}{- First social skill;\\& - Second social skill}\\
+
+% Technical skills
+
+\ecvitem{Technical skills and competences}{- First technical skill;\\& - Second technical skill}\\
+
+% Computer skills
+
+\ecvitem{Computer skills and competences}{- First skill;\\& - Second}\\
+
+% Other skills
+
+\ecvitem{Other skills and competences}{- First otherskill}\\
+
+% Disclaimer
+
+\ecvsection{Disclaimer}
+\ecvitem{}{This informations may be used for all purposes permitted by law and under the Data Protection Act 1998.\\&
+Autorizzo l'utilizzo dei dati personali contenuti nel presente curriculum ai sensi del D.Lgs. 196/2003 e s.m.i. (Codice in materia di protezione dei dati personali)}
+
+\end{europecv}
+\end{document}

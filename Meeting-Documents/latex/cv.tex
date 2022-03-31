@@ -1,0 +1,53 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%% ModernCV themes
+% \moderncvstyle{casual}
+% \moderncvcolor{blue}
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+
+%% Adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+%% Personal data
+\firstname{John}
+\familyname{Doe}
+\title{Resumé title (optional)} 
+\address{street and number}{postcode city} 
+\mobile{+1~(234)~567~890} 
+\phone{+2~(345)~678~901} 
+\fax{+3~(456)~789~012} 
+\email{john@doe.org} 
+\homepage{www.johndoe.com} 
+\extrainfo{additional information} 
+% \photo[64pt][0.4pt]{picture}
+\quote{Some quote (optional)}
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{year--year}{Degree}{Institution}{City}{ \textit{Grade} }{Description}  % arguments 3 to 6 can be left empty
+\cvitem{title}{ \emph{Title} }
+\cvitemwithcomment{Language 1}{Skill level}{Comment}
+\cvdoubleitem{category X}{XXX, YYY, ZZZ}{category Y}{XXX, YYY, ZZZ}
+\cvlistitem{Item 1}
+\cvlistdoubleitem{Item 2}{Item 3}
+
+\section{Dabbing}
+\cvitem{1920-2020}{Dabbed}
+
+%% A publications list
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications} % a bibtex file containing the list of publications
+
+\end{document}
