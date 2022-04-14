@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hello from inside Kubernetes!</title>
+    
+    <style>
+      h1 {
+        text-align: center; 
+      }
+    
+      #image {
+        display: block;
+        width: auto;
+        max-height: 80vh;
+        margin: 3vh auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <h1>Lorem ipsum dolor meme amet</h1>
+    
+    <hr>
+    
+    <img id="image" placeholder="image"></img>
+  </body>
+
+  <script>
+    images = [
+      "img/60098e8c04275-regex.png",
+      "img/6075da77b4112-server_sounds.png",
+      "img/c_sharp_plus.jpg",
+      "img/circle_of_life.png",
+      "img/frontend_backend.jpg",
+      "img/kubernetes.png",
+      "img/kubernetes_begginers.jpg",
+      "img/linux_corona.jpg",
+      "img/mememan_security.png",
+      "img/ml_parrot.jpg",
+      "img/programmers_corona.jpg",
+      "img/programming_vs_demons.jpg",
+      "img/the_documentation.jpg"
+    ];
+    document.getElementById("image").src = images[Math.floor(Math.random() * images.length)];
+  </script>
+</html>
