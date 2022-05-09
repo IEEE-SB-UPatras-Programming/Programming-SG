@@ -53,7 +53,7 @@ def duration_decorator(func):
     def wrapper():
         start_time = time.time()
         func()
-        duration = time.time() - start_time()
+        duration = time.time() - start_time
         print(f"function duration :{duration}")
     
     return wrapper
