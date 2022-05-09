@@ -1,0 +1,1 @@
+# think is is to much for 1 hour of programming sg so if you want to learn more check the readme
