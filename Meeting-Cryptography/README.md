@@ -28,3 +28,9 @@ Decrypt a file
 Site that hosts gpg keys: keys.openpgp.org 
 
 https://users.ece.cmu.edu/~adrian/630-f04/PGP-intro_files/fig1-6.gif
+
+Sign a file:
+> gpg --clearsign <file>
+
+Verify a signed file:
+> gpg --verify <file.sign>
