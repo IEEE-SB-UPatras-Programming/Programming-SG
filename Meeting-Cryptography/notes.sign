@@ -1,0 +1,36 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+# gpg 
+
+
+Encrypt a file for a specific recipient
+
+> gpg --recipient user-id --encrypt file
+
+
+Encrypt a file with a password
+
+> gpg --symetric file
+
+Decrypt a file 
+
+> gpg --output file -- decrypt file.gpg
+
+# show keys.openpgp.org 
+
+https://users.ece.cmu.edu/~adrian/630-f04/PGP-intro_files/fig1-6.gif
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCAAdFiEEYavOdk6CAAjQeN+QtchrWZ/w6zoFAmJ2nGAACgkQtchrWZ/w
+6zrxEQwAymIUpa9nFPJXaRLO8oshIqrhkG9d69YHUZoBtksFOsCSsRotqI1GZj1l
+v7gOW8/ch6D9RSYAEU4oaRIRDLGiMGRwX4sx7C9zjFj3tWu0dwAHN/qRIaJ+qegK
+Q/58nbkYbYqpggHM2oYnQTI0xLqZ0rQWfKYn0nKM/1vYAy9Sdm7AadHNuCd4Sebx
+qJS/04xC2hjEtWviVy6JTsfhKItgYr8SeNly5PWD4Zwt1jVvdgDA9tNrKaXJYp/v
+MCR0vASglPw+yJ3WGbd4jLBhoZFqVlPy6EC3KbycW9A4+FXO6ieb6NxChCwktIL6
+Azf9N693qbW5i0oULdQMvlYvI8gsdoGWAXKkeZvwQ3E7Ofd19uG91VHOkhrrkMyG
+cDDnDGhUWHWohtNffBSQOlW0wQTC5GvGTzFRGxrWxZnnEzqsBC96eZZTEM11esbE
+NMXkGApHhJN58LDzmAj0cPsmolAw+PUpXJw2xr2cNxgOjV6lwkK0BWzBeokEs2U1
+dTT6SXvO
+=4Vlm
+-----END PGP SIGNATURE-----
