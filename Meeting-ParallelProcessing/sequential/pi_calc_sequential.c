@@ -1,10 +1,9 @@
 #include <stdio.h>
-// #include <math.h>
 #include <stdlib.h>
 #include <time.h>
 #include <omp.h>
 #define SEED time(NULL)
-#define n 40000000000
+#define n 1000000000
 
 int main() {
 
@@ -25,10 +24,6 @@ int main() {
         z = x * x + y * y;
 
         if( z <= 1 ) count++;
-        if( i % 1000000000 == 0)
-        {
-            printf("we are at %d \n",(int) i);
-        }
     }
 
     pi = (double) count / n * 4;

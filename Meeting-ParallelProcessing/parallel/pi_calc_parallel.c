@@ -4,14 +4,14 @@
 #include <time.h>
 #include <omp.h>
 
-#define n 40000000000
+#define n 1000000000
 
 double get_wtime(void);
 
 int main() {
 
     double begin, end;
-    long long i, count;
+    int i, count;
     double pi;
 
     begin = omp_get_wtime();
